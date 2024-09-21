@@ -1,51 +1,36 @@
-**[summary](#summary) | [contents](#contents) | [usage](#usage) | [running the code](#running-the-code) | [issues](#issues) | [citations](#citations) | [license](#license)**
+**[summary](#summary) | [contents](#contents) | [usage](#usage) | [citations](#citations) | [license](#license)**
 
 # 3D-Gravity-Inv-SimPEG
-[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.4057134.svg)](https://doi.org/10.5281/zenodo.4057134)
-
-<img src="figures/Figure5b.png" width=50% align="middle">
 
 ## Summary
 This is a practice project, aiming to construct subsurface 3D density model using geophysical gravity data and the open source package [SimPEG](https://simpeg.xyz/). 
 
 ## Contents
+The input files
 
+- grav.obs: observed gravity data.
+
+- mesh.txt: model discretization or parameterization.
+
+- topo.txt: topography.
+
+The output file
+
+- model_dens.txt: recovered density model.
 
 ## Usage
 
 To run the script locally, you need to have python installed, [anaconda](https://www.anaconda.com/download/) is recommended.
 
-- Install dependencies:
+- Install SimPEG. 
 ```
-pip install -r requirements.txt
+conda install SimPEG --channel conda-forge
 ```
-
-- Or, set up working environment using conda:
+or
 ```
-conda env create -f environment.yml
-conda activate sparse-environment
+pip install SimPEG
+
 ```
-
-- Install a modified version of SimPEG. Xiaolong made a few changes, yet haven't pull request so far.
-```
-pip install git+https://github.com/xiaolongw1223/simpeg.git@Joinv_0.13.0_gzz --upgrade --user
-```
-
-## Running the code
-
-Download the code and unzip the file,
-
-- In an IPython console
-
-      run MixedLpInversion.py Input.json
-
-- In a command terminal
-
-      $ python MixedLpInversion.py Input.json
-
-## Issues
-
-Please [make an issue](https://github.com/xiaolongw1223/2020-GP-recovering-sparse-models/issues) if you encounter any problems while trying to run the notebooks.
 
 ## Citations
 
