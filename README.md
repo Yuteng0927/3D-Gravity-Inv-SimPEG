@@ -2,6 +2,8 @@
 
 # 3D-Gravity-Inv-SimPEG
 
+<img src="fig_model_inpolygon.png" width=50% align="middle">
+
 ## Summary
 This is a practice project, aiming to construct subsurface 3D density model using geophysical gravity data and the open source package [SimPEG](https://simpeg.xyz/). 
 
